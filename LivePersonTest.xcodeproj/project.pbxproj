@@ -8,20 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		A5B2554F22C135C3004CFED8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B2554E22C135C3004CFED8 /* AppDelegate.swift */; };
-		A5B2555122C135C3004CFED8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B2555022C135C3004CFED8 /* ViewController.swift */; };
 		A5B2555422C135C3004CFED8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5B2555222C135C3004CFED8 /* Main.storyboard */; };
 		A5B2555622C135C5004CFED8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5B2555522C135C5004CFED8 /* Assets.xcassets */; };
 		A5B2555922C135C5004CFED8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5B2555722C135C5004CFED8 /* LaunchScreen.storyboard */; };
+		A5B2556322C167FB004CFED8 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B2556222C167FB004CFED8 /* PopupViewController.swift */; };
+		A5B2556522C16821004CFED8 /* PopupConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B2556422C16821004CFED8 /* PopupConfig.swift */; };
+		A5B2556722C1683D004CFED8 /* PopupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B2556622C1683D004CFED8 /* PopupViewModel.swift */; };
+		A5B2556922C21316004CFED8 /* PopupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5B2556822C21316004CFED8 /* PopupView.xib */; };
+		A5B2556B22C2133A004CFED8 /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B2556A22C2133A004CFED8 /* PopupView.swift */; };
+		A5B2556D22C21535004CFED8 /* IBDesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B2556C22C21535004CFED8 /* IBDesignableView.swift */; };
+		A5B2556F22C26C3A004CFED8 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B2556E22C26C3A004CFED8 /* Validator.swift */; };
+		A5B2557122C26FA6004CFED8 /* PopupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B2557022C26FA6004CFED8 /* PopupManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A5B2554B22C135C3004CFED8 /* LivePersonTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LivePersonTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5B2554E22C135C3004CFED8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A5B2555022C135C3004CFED8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A5B2555322C135C3004CFED8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A5B2555522C135C5004CFED8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5B2555822C135C5004CFED8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A5B2555A22C135C5004CFED8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5B2556222C167FB004CFED8 /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
+		A5B2556422C16821004CFED8 /* PopupConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupConfig.swift; sourceTree = "<group>"; };
+		A5B2556622C1683D004CFED8 /* PopupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewModel.swift; sourceTree = "<group>"; };
+		A5B2556822C21316004CFED8 /* PopupView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopupView.xib; sourceTree = "<group>"; };
+		A5B2556A22C2133A004CFED8 /* PopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupView.swift; sourceTree = "<group>"; };
+		A5B2556C22C21535004CFED8 /* IBDesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBDesignableView.swift; sourceTree = "<group>"; };
+		A5B2556E22C26C3A004CFED8 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		A5B2557022C26FA6004CFED8 /* PopupManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +68,61 @@
 		A5B2554D22C135C3004CFED8 /* LivePersonTest */ = {
 			isa = PBXGroup;
 			children = (
+				A5B2557722C28FB7004CFED8 /* Popup */,
+				A5B2557422C28F17004CFED8 /* Common */,
+				A5B2557222C28DB5004CFED8 /* Helpers */,
+				A5B2557322C28DC8004CFED8 /* Services */,
 				A5B2554E22C135C3004CFED8 /* AppDelegate.swift */,
-				A5B2555022C135C3004CFED8 /* ViewController.swift */,
-				A5B2555222C135C3004CFED8 /* Main.storyboard */,
 				A5B2555522C135C5004CFED8 /* Assets.xcassets */,
 				A5B2555722C135C5004CFED8 /* LaunchScreen.storyboard */,
+				A5B2555222C135C3004CFED8 /* Main.storyboard */,
 				A5B2555A22C135C5004CFED8 /* Info.plist */,
 			);
 			path = LivePersonTest;
+			sourceTree = "<group>";
+		};
+		A5B2557222C28DB5004CFED8 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A5B2556E22C26C3A004CFED8 /* Validator.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A5B2557322C28DC8004CFED8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A5B2557022C26FA6004CFED8 /* PopupManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A5B2557422C28F17004CFED8 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A5B2556C22C21535004CFED8 /* IBDesignableView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A5B2557522C28F31004CFED8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A5B2556622C1683D004CFED8 /* PopupViewModel.swift */,
+				A5B2556822C21316004CFED8 /* PopupView.xib */,
+				A5B2556A22C2133A004CFED8 /* PopupView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A5B2557722C28FB7004CFED8 /* Popup */ = {
+			isa = PBXGroup;
+			children = (
+				A5B2557522C28F31004CFED8 /* Views */,
+				A5B2556222C167FB004CFED8 /* PopupViewController.swift */,
+				A5B2556422C16821004CFED8 /* PopupConfig.swift */,
+			);
+			path = Popup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5B2555922C135C5004CFED8 /* LaunchScreen.storyboard in Resources */,
+				A5B2556922C21316004CFED8 /* PopupView.xib in Resources */,
 				A5B2555622C135C5004CFED8 /* Assets.xcassets in Resources */,
 				A5B2555422C135C3004CFED8 /* Main.storyboard in Resources */,
 			);
@@ -135,8 +197,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5B2555122C135C3004CFED8 /* ViewController.swift in Sources */,
+				A5B2556F22C26C3A004CFED8 /* Validator.swift in Sources */,
 				A5B2554F22C135C3004CFED8 /* AppDelegate.swift in Sources */,
+				A5B2557122C26FA6004CFED8 /* PopupManager.swift in Sources */,
+				A5B2556722C1683D004CFED8 /* PopupViewModel.swift in Sources */,
+				A5B2556D22C21535004CFED8 /* IBDesignableView.swift in Sources */,
+				A5B2556B22C2133A004CFED8 /* PopupView.swift in Sources */,
+				A5B2556522C16821004CFED8 /* PopupConfig.swift in Sources */,
+				A5B2556322C167FB004CFED8 /* PopupViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

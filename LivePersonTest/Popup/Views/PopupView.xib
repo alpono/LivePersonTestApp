@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopupView" customModule="LivePersonTest" customModuleProvider="target">
+            <connections>
+                <outlet property="confirmButton" destination="Ie4-J2-82y" id="Igu-rw-ZHW"/>
+                <outlet property="confirmButtonContainerView" destination="SyM-z1-veY" id="I1H-eq-BWp"/>
+                <outlet property="dismissButton" destination="euM-9N-lEx" id="7R5-MU-DPB"/>
+                <outlet property="inputField" destination="ThU-hJ-qnE" id="1WI-0l-NpZ"/>
+                <outlet property="inputFieldContainerView" destination="VQA-rI-S84" id="FcE-gv-Aa9"/>
+                <outlet property="subtitleLabel" destination="gqs-rQ-9Nj" id="Qcx-PS-ucz"/>
+                <outlet property="titleLabel" destination="nqh-cK-JGX" id="EjC-Fv-6Eu"/>
+                <outlet property="topImageView" destination="Yec-qc-oHe" id="PrR-fB-qTJ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="338"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="FEP-ps-sS6">
+                    <rect key="frame" x="0.0" y="20" width="374" height="298"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yec-qc-oHe">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="67"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="67" id="sjG-gv-t6e"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nqh-cK-JGX">
+                            <rect key="frame" x="0.0" y="83" width="374" height="23"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                            <color key="textColor" red="0.51066011190000005" green="0.18286237120000001" blue="0.50983709099999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqs-rQ-9Nj">
+                            <rect key="frame" x="0.0" y="122" width="374" height="18"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                            <color key="textColor" red="0.69227349760000001" green="0.53309983019999996" blue="0.70590430500000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VQA-rI-S84">
+                            <rect key="frame" x="0.0" y="156" width="374" height="40"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ThU-hJ-qnE">
+                                    <rect key="frame" x="47" y="0.0" width="280.5" height="40"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="ThU-hJ-qnE" secondAttribute="bottom" id="1TO-q6-FjD"/>
+                                <constraint firstItem="ThU-hJ-qnE" firstAttribute="width" secondItem="VQA-rI-S84" secondAttribute="width" multiplier="0.75" id="8bu-Rb-p1J"/>
+                                <constraint firstItem="ThU-hJ-qnE" firstAttribute="centerX" secondItem="VQA-rI-S84" secondAttribute="centerX" id="BB0-hB-pfN"/>
+                                <constraint firstItem="ThU-hJ-qnE" firstAttribute="top" secondItem="VQA-rI-S84" secondAttribute="top" id="Itg-eP-3Xp"/>
+                                <constraint firstAttribute="height" constant="40" id="hKj-iI-e1b"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SyM-z1-veY">
+                            <rect key="frame" x="0.0" y="212" width="374" height="40"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ie4-J2-82y">
+                                    <rect key="frame" x="56" y="0.0" width="262" height="40"/>
+                                    <color key="backgroundColor" red="0.94443899389999997" green="0.61192953589999999" blue="0.32921630140000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                    <state key="normal" title="Confirm Button">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="confirmDidTap:" destination="-1" eventType="touchUpInside" id="VEk-8C-kPn"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="Ie4-J2-82y" firstAttribute="centerX" secondItem="SyM-z1-veY" secondAttribute="centerX" id="5KC-6g-AEh"/>
+                                <constraint firstItem="Ie4-J2-82y" firstAttribute="top" secondItem="SyM-z1-veY" secondAttribute="top" id="Wic-mo-2BI"/>
+                                <constraint firstAttribute="height" constant="40" id="Zm4-w8-k9u"/>
+                                <constraint firstAttribute="bottom" secondItem="Ie4-J2-82y" secondAttribute="bottom" id="ie8-Bj-6Nt"/>
+                                <constraint firstItem="Ie4-J2-82y" firstAttribute="width" secondItem="SyM-z1-veY" secondAttribute="width" multiplier="0.7" id="twJ-bL-jzu"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euM-9N-lEx">
+                            <rect key="frame" x="0.0" y="268" width="374" height="30"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                            <state key="normal" title="Dismiss Button">
+                                <color key="titleColor" red="0.5370238423" green="0.51714891200000002" blue="0.54117661709999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </state>
+                            <connections>
+                                <action selector="dismissDidTap:" destination="-1" eventType="touchUpInside" id="1S4-Tw-bbm"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="0.97933989759999995" green="0.89196836950000002" blue="0.99216705559999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="FEP-ps-sS6" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="3UF-2o-tZz"/>
+                <constraint firstAttribute="bottom" secondItem="FEP-ps-sS6" secondAttribute="bottom" constant="20" id="61b-hV-0fh"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="FEP-ps-sS6" secondAttribute="trailing" id="Oqg-zE-hos"/>
+                <constraint firstAttribute="top" secondItem="FEP-ps-sS6" secondAttribute="top" constant="-20" id="a6O-X6-GCM"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="68.115942028985515" y="-187.83482142857142"/>
+        </view>
+    </objects>
+</document>
